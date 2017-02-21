@@ -27,7 +27,7 @@ namespace TestApplication
                 Console.WriteLine(number);
             }
 
-            //Reverse Array
+            //Reverse Array And Write a log
             System.Array.Reverse(numbers);
             Console.WriteLine("------");
             Console.WriteLine("Numbers in reverse.");
