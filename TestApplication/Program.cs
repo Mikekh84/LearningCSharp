@@ -9,6 +9,12 @@ namespace TestApplication
     class Program
     {
         enum Days { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
+        enum Volume
+        {
+            Low = 20,
+            Medium = 50,
+            Loud = 100
+        }
         static void Main(string[] args)
         {
             int[] numbers = new int[7];
@@ -38,8 +44,8 @@ namespace TestApplication
                 Console.WriteLine(number);
             }
 
-            Days today = Days.Tuesday;
-            Console.WriteLine("Enum postion");
+            Days today = Days.Monday;
+            Console.WriteLine("Enum base int");
             Console.WriteLine((int) today);
             if(today == Days.Monday)
             {
@@ -48,6 +54,18 @@ namespace TestApplication
             else
             {
                 Console.WriteLine("It is not Monday");
+            }
+
+            //Return a string array of named constants for the Enum
+            Console.WriteLine("Volumes");
+            foreach (string s in System.Enum.GetNames(typeof(Volume)))
+            {
+                Console.WriteLine(s);
+            }
+
+            foreach (Volume volume in System.Enum.GetValues(typeof(Volume)))
+            {
+                Console.WriteLine("{0} = {1}", volume, (int)volume);
             }
         }
     }
