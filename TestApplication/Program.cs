@@ -8,6 +8,7 @@ namespace TestApplication
 {
     class Program
     {
+        enum Days { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
         static void Main(string[] args)
         {
             int[] numbers = new int[7];
@@ -35,6 +36,17 @@ namespace TestApplication
             foreach (int number in numbers)
             {
                 Console.WriteLine(number);
+            }
+
+            Days today = Days.Tuesday;
+
+            if(today == Days.Monday)
+            {
+                Console.WriteLine("It's Monday");
+            }
+            else
+            {
+                Console.WriteLine("It is not Monday");
             }
         }
     }
