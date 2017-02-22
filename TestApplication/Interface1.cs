@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestApplication
 {
-    class Program
+    interface Interface1
     {
-      
-        static void Main(string[] args)
-        {
-            Console.WriteLine("This is a test.");
-        }
     }
 }
