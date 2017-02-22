@@ -39,7 +39,8 @@ namespace TestApplication
             }
 
             Days today = Days.Tuesday;
-
+            Console.WriteLine("Enum postion");
+            Console.WriteLine((int) today);
             if(today == Days.Monday)
             {
                 Console.WriteLine("It's Monday");
