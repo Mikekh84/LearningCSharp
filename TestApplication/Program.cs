@@ -27,7 +27,18 @@ namespace TestApplication
            while (i < 5) {
                 Console.WriteLine(i);
                 i++;
+            }
+            Console.WriteLine("Testing For Loop");
+           for (int m = 0; m < 10; m++)
+            {
+                Console.WriteLine(m);
+            }
 
+            Console.WriteLine("Testing For Each");
+            string[] letters = new string[5] { "a", "b", "c", "d", "e" };
+            foreach (string letter in letters)
+            {
+                Console.WriteLine(letter);
             }
         }
     }
